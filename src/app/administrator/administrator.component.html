@@ -1,0 +1,76 @@
+<div style="text-align: right;">
+  <!-- <li><a [routerLink]="['/logout']"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li> -->
+  <button (click)='logout()'>Logout</button>
+  </div>
+
+Hello <b>{{h}}</b>
+
+
+<div>
+    
+    
+  <ul class="nav " routerLinkActive="active">
+  <li class="nav-item "><a class="nav-link" routerLink="/orders"> Orders</a></li>
+
+  </ul>
+</div>
+
+
+<div class="container">
+    <button type="button" class="btn btn-primary" (click)="getSalad()">{{s?"hide Salads":"find salads"}}</button>
+</div>
+
+<tr *ngIf ='s'>
+  <ng-container *ngFor="let Salad of Salad">
+   id: {{Salad.id}}
+    <div>priceUnit: {{Salad.priceUnit}}</div>
+    <div>name: {{Salad.name}}</div>
+    <div>Qty: {{Salad.qty}}</div><br>
+    
+     
+  </ng-container>
+
+</tr>
+
+  <input type="text" placeholder="Find Salad By Name"  name="name" [(ngModel)]="Salad.name"/>
+<button (click)="findByNameSalad()" >find salad by name</button>
+<tr *ngIf ='k'>
+  <ng-container *ngFor="let Salad of Salad">
+   id: {{Salad.id}}
+    <div>priceUnit: {{Salad.priceUnit}}</div>
+    <div>name: {{Salad.name}}</div>
+    <div>Qty: {{Salad.qty}}</div><br>
+    
+     
+  </ng-container>
+
+</tr>
+
+<br>
+
+Δες τους Users<button (click)="getUsers()">{{g?"hide":"show"}}</button><br>
+<tr *ngIf ='g'>
+<ng-container *ngFor="let User of User" >
+  
+  
+  <div>User {{User.id}}</div>
+   <div>Username: {{User.username}}</div>
+   <div>Password: {{User.password}}</div><br>
+   <div>Email: {{User.email}}</div><br>
+ 
+    
+ </ng-container>
+</tr>
+
+<br>
+
+  
+  
+
+  Δες τα Messages<button (click)="getMessage()">{{t?"hide":"show"}}</button><br>
+<tr *ngIf ='t'>
+  <ng-container *ngFor="let Message of Message" >
+  <div>Id: {{Message.id}}</div>
+   <div>Message: {{Message.messageText}}</div>
+</ng-container>
+</tr>

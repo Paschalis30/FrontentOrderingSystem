@@ -1,0 +1,55 @@
+
+
+    <div>
+    
+    <ul class="nav " routerLinkActive="active">
+    <li ><a class="nav-link" routerLink="/login"> Login</a></li>
+    <li ><a class="nav-link" routerLink="/"> Main</a></li>
+    </ul>
+  
+</div>
+
+
+
+{{this.message}}
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>This is a simpleRegister Form made using Boostrap.</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                       
+                            
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" [(ngModel)]="User.username" id="username" name="username" class="form-control" placeholder="Username *" >
+                            </div>
+                           
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password"[(ngModel)]="User.password" class="form-control" placeholder="Your Password *"  >
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email"[(ngModel)]="User.email" class="form-control" placeholder="Your Email *"  >
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <button type="button" class="btnSubmit" (click)="registerNow()">Submit</button>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,361 @@
+
+    
+
+
+        <!-- <div   class="weather-widget" >
+            <h3 >Ο καιρός σήμερα:</h3>
+            <p  id="weather"></p>
+        </div>
+    
+            <div   class="test">
+                
+                <span  id="test1"></span>
+            </div> -->
+   
+   <div *ngIf='z'>   
+{{h}} you are loged in
+<div  style="text-align: right;">
+<!-- <li><a [routerLink]="['/logout']"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li> -->
+<button (click)='logout()'>Logout</button>
+</div>
+<div>
+    
+    
+    <ul class="nav " routerLinkActive="active">
+    <li class="nav-item "><a class="nav-link" routerLink="/administrator"> Administrator Page</a></li>
+  
+    </ul>
+  </div>
+
+
+
+
+
+<table>
+    
+<thead>
+    <td colspan="3" align="center" style="background-color: chartreuse;">
+        ΦΑΓΗΤΑ
+        </td>
+     
+</thead>
+<tbody>
+    
+    
+    <tr>
+        <td  >
+         <b>  ΕΙΔΟΣ</b> 
+        </td>
+        <td>
+          <b>  ΤΙΜΗ ΤΕΜΑΧΙΟΥ</b>
+        </td>
+        <td>
+           <b> ΤΕΜΑΧΙΑ</b>
+            </td>
+        
+
+           
+             
+    </tr>
+
+
+    
+        
+            
+            
+           
+    
+    
+    <!-- souvlaki -->
+    <tr>
+
+<td>
+<button (click)="increaseSouvlaki()"><b>ΣΟΥΒΛΑΚΙ</b></button>
+
+
+
+</td>
+<td>
+    1.30 €
+</td>
+<td>
+    <input type="number" id="demo"[value]="souvlaki" #souvlaki>
+</td>
+</tr>
+
+
+
+
+
+
+<!-- soutzoukaki -->
+<tr>
+
+    <td>
+    <button (click)="increaseSoutzoukaki()"><b>ΣΟΥΤΖΟΥΚΑΚΙ</b></button>
+    
+     
+    
+    </td>
+    <td>
+        1.30 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="soutzoukaki" #soutzoukaki>
+    </td>
+    </tr>
+
+
+
+
+
+
+<!-- sandwitchMono -->
+
+
+
+<tr>
+
+    <td>
+    <button (click)="increaseSandwitchMono()"><b>ΣΑΝΤΟΥΙΤΣ ΜΟΝΟ</b></button>
+    
+     
+    
+    </td>
+    <td>
+        2.5 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="sandwitchMono" #sandwitchMono>
+    </td>
+    </tr>
+
+
+<!-- sandwitchDiplo -->
+
+
+
+<tr>
+
+    <td>
+    <button (click)="increaseSandwitchDiplo()"><b>ΣΑΝΤΟΥΙΤΣ ΔΙΠΛΟ</b></button>
+    
+     
+    
+    </td>
+    <td>
+        3 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="sandwitchDiplo" #sandwitchDiplo>
+    </td>
+    </tr>
+
+
+<!-- tzatziki -->
+
+<tr>
+<td>
+  <button  (click)="increaseTzatziki()"><b>  ΤΖΑΤΖΙΚΙ </b></button>
+    
+ 
+
+</td>
+<td>
+    2.5 €
+</td>
+<td>
+    <input type="number" id="demo"[value]="tzatziki" #tzatziki>
+</td>
+</tr>
+
+
+
+<!-- xoriatiki -->
+
+<tr>
+    <td>
+        <button  (click)="increaseXoriatiki()"><b>ΧΩΡΙΑΤΙΚΗ</b></button>
+    </td>
+    <td>
+        3 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="xoriatiki" #xoriatiki>
+    </td>
+</tr>
+
+
+<!-- psomi -->
+
+<tr>
+    <td>
+        <button  (click)="increasePsomi()"><b>ΨΩΜΙ</b></button>
+    </td>
+    <td>
+        0.50 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="psomi" #psomi>
+    </td>
+</tr>
+
+
+
+    
+        
+
+
+<tr>
+<td colspan="3" align="center" style="background-color: deeppink;">
+    ΠΟΤΑ
+    </td>
+</tr>
+
+
+<!-- retsina -->
+
+<tr>
+    <td>
+        <button  (click)="increaseRetsina()"><b>ΡΕΤΣΙΝΑ</b></button>
+    </td>
+    <td>
+        3 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="retsina" #retsina>
+    </td>
+
+<!-- bira -->
+
+<tr>
+    <td>
+        <button  (click)="increaseBira()"><b>ΜΠΥΡΑ</b></button>
+    </td>
+    <td>
+        2.50 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="bira" #bira>
+    </td>
+
+
+<!-- coca cola -->
+
+<tr>
+    <td>
+        <button  (click)="increaseCoca()"><b>Coca-cola</b></button>
+    </td>
+    <td>
+        1.50 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="coca" #coca>
+    </td>
+
+
+    <!-- nera -->
+
+<tr>
+    <td>
+        <button  (click)="increaseNero()"><b>ΝΕΡΑ</b></button>
+    </td>
+    <td>
+        0.50 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="nero" #nero>
+    </td>
+
+
+    <!-- portokalada -->
+
+<tr>
+    <td>
+        <button  (click)="increasePortokalada()"><b>ΠΟΡΤΟΚΑΛΑΔΑ</b></button>
+    </td>
+    <td>
+        1.50 €
+    </td>
+    <td>
+        <input type="number" id="demo"[value]="portokalada" #portokalada>
+    </td>
+
+  
+</tr>
+<!-- sinolo -->
+<tr style="background-color: forestgreen;">
+<td>
+<b>ΣΥΝΟΛΟ:  {{sinolo}} €    </b>    ||  
+<button (click)="finalPrice()"[disabled]="isDisabled">ΕΚΤΥΠΩΣΗ ΑΠΟΔΕΙΞΗΣ</button> 
+||<button (click)="clear()"  >ΝΕΑ ΠΑΡΑΓΕΛΛΙΑ</button>
+<br>
+
+<button (click)="calculate()"[disabled]="isDisabled">ΣΥΝΟΛΟ</button>
+</td>
+</tr>
+
+
+
+
+
+</tbody>
+
+</table>
+</div>
+<br>
+<br>
+<br>
+
+
+
+<br>
+
+
+
+<table>
+
+<tr>
+      
+<td *ngIf='paragelia'  rowspan="14" style="vertical-align: text-top;">
+    ΝΟΜΙΜΗ ΑΠΟΔΕΙΞΗ
+    <br><br>
+    <h5>ΠΡΟΙΟΝ|ΠΟΣΟΤΗΤΑ|ΤΙΜ*ΤΕΜ</h5><br><br>
+    <div *ngIf="this.souv" >
+           {{this.souvlakis}}     X {{this.souv}}||  {{this.f}} €<br></div>
+           <div *ngIf="this.soutz">
+           {{this.soutzoukakis}}   X {{this.soutz}} ||{{this.s}} €<br></div>
+           <div *ngIf="this.sandD">
+            {{this.sandwitchDiplos}}   X {{this.sandD}}|| {{this.sD}} €<br></div>
+            <div *ngIf="this.sandM">
+            {{this.sandwitchMonos}}   X {{this.sandM}} ||{{this.sM}} €<br></div>
+            <div *ngIf="this.tzatz">
+            {{this.tzatzikis}}  X {{this.tzatz}} || {{this.k}} €<br></div>
+            <div *ngIf="this.xor">
+            {{this.xoriatikis}}   X {{this.xor}} ||{{this.x}} €<br></div>
+            <div *ngIf="this.pso">
+            {{this.psomis}}   X {{this.pso}} ||{{this.p}} €<br></div>
+            <div *ngIf="this.ret">
+            {{this.retsinas}}   X {{this.ret}}|| {{this.r}} €<br></div>
+            <div *ngIf="this.bi">
+            {{this.biras}}  X {{this.bi}}|| {{this.bir}} €<br></div>
+            <div *ngIf="this.coc">
+            {{this.cocas}}   X {{this.coc}}|| {{this.c}} €<br></div>
+            <div *ngIf="this.ner">
+            {{this.neros}}   X {{this.ner}}|| {{this.n}} €<br></div>
+            <div *ngIf="this.port" >
+            {{this.portokaladas}}   X {{this.port}}|| {{this.por}} €<br></div>
+    
+            <br><br>
+            <div  class="paragellia"style="vertical-align: text-bottom;">
+                ΣΥΝΟΛΟ
+                {{sinolo}} €</div>
+                
+                    </td>
+                    <button *ngIf='paragelia' (click)="printPage()">print</button>  
+                </tr>
+                </table>
+
+
+
+                TELOS

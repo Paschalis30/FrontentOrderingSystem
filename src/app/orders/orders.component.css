@@ -1,0 +1,33 @@
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-collapse: collapse;
+  
+  
+  }
+  td {
+  
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  
+  th {
+    border: 1px solid black;
+    padding: 5px;
+    collspan: 18;
+  
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    color: darkslategray;
+  }
+
+
+
+
+
+  .weather-widget {
+    border: 10px solid rgb(189, 54, 54);
+  }

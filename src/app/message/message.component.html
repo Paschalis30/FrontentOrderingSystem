@@ -1,0 +1,18 @@
+<div>
+    
+    
+    <ul class="nav " routerLinkActive="active">
+    <li class="nav-item "><a class="nav-link" routerLink="/"> Go Back</a></li>
+
+    </ul>
+    </div>
+
+
+Write your message:
+
+
+<input type="text"[(ngModel)]="messageText">
+<button (click)="sendMessage()">Submit</button>
+
+<br>
+{{this.message}}
