@@ -1,5 +1,14 @@
 # OrderingSystem
 
+This repository contains the Frontent part of the project orderingsystem.The backend part is contained in orderingsystem repository.
+
+
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
 ## Development server
